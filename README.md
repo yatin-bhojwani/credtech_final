@@ -93,7 +93,7 @@ flowchart TD
 ### Running Locally  
 **Run Backend(without docker)**
    ```bash
-   cd my-backend
+   cd backend
    python -m venv venv
    source venv/bin/activate   # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
@@ -102,7 +102,7 @@ flowchart TD
 
 **Run Backend(with docker)**
    ```bash
-   cd my-backend
+   cd backend
    docker build -t my-backend ./backend 
    docker run -p 8080:8080 my-backend
 ```
@@ -111,7 +111,7 @@ flowchart TD
 
 **Run Frontend**
    ```bash
-cd my-frontend
+cd frontend
 npm install
 npm run dev
 ```
